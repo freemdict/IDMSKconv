@@ -11,7 +11,8 @@ Tested dictionaries:
 
 ### Changelog
 Thanks to Superfan and https://github.com/hoverruan/IDMSKconv
-2020/10/18
+
+#### 2020/10/18
 - now requires python3+
 - fix linux support (from https://github.com/hoverruan/IDMSKconv)
 - add duplicate file support, will rename file if there is duplicates.
