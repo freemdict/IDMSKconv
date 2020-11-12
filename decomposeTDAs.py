@@ -62,7 +62,8 @@ class decompose:
         print('Now decompressing...')
         for xi, bytei in byte:
             i += 1
-            dedata = zlib.decompress(fin.read(bytei))
+            # dedata = zlib.decompress(fin.read(bytei))
+            dedata = zlib.decompressobj().decompress(fin.read(bytei))  # fix zlib error -5 when exceeding its buffer size
             fdst.write(dedata)
         print('Done!Total %d entries.' % i)
 
